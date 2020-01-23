@@ -1,0 +1,23 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://addons/braga.scenebrush2D/SceneBrush2D.gd" type="Script" id=1]
+[ext_resource path="res://addons/braga.scenebrush2D/tools/icons/icon_SceneBrush2D.svg" type="Texture" id=2]
+[ext_resource path="res://BLUE.tscn" type="PackedScene" id=3]
+[ext_resource path="res://GREEN.tscn" type="PackedScene" id=4]
+[ext_resource path="res://RED.tscn" type="PackedScene" id=5]
+[ext_resource path="res://icon.png" type="Texture" id=6]
+
+[node name="TestScene" type="Node2D"]
+
+[node name="SceneBrush2D" type="Node2D" parent="."]
+script = ExtResource( 1 )
+__meta__ = {
+"_editor_icon": ExtResource( 2 )
+}
+_scenes = [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ]
+erase_max_distance = 40.0
+
+[node name="GREEN" type="Sprite" parent="SceneBrush2D" instance=ExtResource( 4 )]
+modulate = Color( 0.231373, 0.929412, 0.152941, 1 )
+position = Vector2( 176, 264 )
+texture = ExtResource( 6 )
