@@ -9,8 +9,6 @@ It adds a new node `SceneBrush2D`.
 This is a regular editor plugin.
 Just Copy the `addons` folder to your Godot Project Folder and activate it in your project settings.
 
-![scenebrush2d](https://s5.gifyu.com/images/scenebrush2d.gif)
-
 ## Use
 
 - Have any 2D scene
